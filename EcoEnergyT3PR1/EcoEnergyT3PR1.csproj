@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EcoUtilities\EcoUtilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include=".github\workflows\cicd.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCasesDiagram\" />
   </ItemGroup>
 
 </Project>
